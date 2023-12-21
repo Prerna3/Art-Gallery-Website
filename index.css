@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: black;
+    padding: 1rem 5%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1.2rem;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+span {
+    color: orange;
+}
+
+
+.login {
+    text-decoration: none;
+    min-width: 95px;
+    max-height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 65%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.signup {
+    text-decoration: none;
+    min-width: 95px;
+    max-height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 2%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+
+.navbar {
+    text-decoration: none;
+    margin-left: 40%;
+    display: inline;
+}
+
+#main {
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    padding-left: 10%;
+}
+
+#main::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+#main .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#main h1 {
+    display: block;
+    /* width: fit-content; */
+    top: 40%;
+    font-size: 4rem;
+    position: relative;
+    color: #fff;
+    margin: 0;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+#main p {
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 40%;
+    margin: 10px 0;
+    font-size: x-large;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer h1 {
+    font-size: 2.0rem;
+}
+
+#footer .social-icon {
+    display: flex;
+    padding-top: 10PX;
+    padding-left: 43%;
+    margin-bottom: 30px;
+}
+
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer p {
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+#footer h3 {
+    color: whitesmoke;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+#footer h3 a {
+    text-decoration: none;
+}

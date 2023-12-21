@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>ArtSpire</title>
+    <style>
+        .contact {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/palette.png" alt="Logo" style="width: 40px;">Art<span>Spire</span></a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="cart.html">arts</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <section id="contact">
+        <hr>
+        <div class="contact container">
+            <h1>Contact Us</h1>
+            <form id="myForm" method="post">
+                <label for="fname">First Name<span> *</span></label><br>
+                <input type="text" id="fname" name="fname" placeholder="e.g., John" size="30px"><br><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="e.g., Smith" size="30px"><br><br>
+                <label for="phoneno">Phone No.<span> *</span></label><br>
+                <input type="text" id="phoneno" name="phoneno" maxlength="10" size="30px" minlength="10"
+                    placeholder="Enter 10 Digit Phone Number"><br><br>
+                <label for="email">Email Id<span> *</span></label><br>
+                <input type="email" id="email" name="email" placeholder="abc@company.com" size="30px"><br><br>
+                <label for="msg">Message<span> *</span></label><br>
+                <textarea id="msg" name="msg" rows="5" cols="29" placeholder="Enter Your Query..."></textarea><br><br>
+            </form>
+            <button type="submit" id="btn" onclick="valid()">SEND MESSAGE</button>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1>Art<span>Spire</span></h1>
+            </div>
+            <h3>Thane - 401107, Maharashtra, India</h3>
+            <h3><span>+91 908 202 7740</span> - <a href="mailto:prernaranjan351@gmail.com">info@artspire.com</a></h3>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="images/5296499_fb_facebook_facebook logo_icon.png" width="40px" height="40px" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/prerna_ranjan3/" target="_blank">
+                        <img src="images/3225191_app_instagram_logo_media_popular_icon.png" width="40px"
+                            height="40px" />
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/prerna-ranjan-03/" target="_blank">
+                        <img src="images/317750_linkedin_icon.png" width="40px" height="40px" />
+                    </a>
+                </div>
+            </div>
+            <p>© Copyright 2023 by Prerna Ranjan || All rights reserved</p>
+        </div>
+    </section>
+    <script src="JavaScript/contact.js"></script>
+</body>
+
+</html>

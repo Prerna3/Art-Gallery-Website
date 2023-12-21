@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>ArtSpire</title>
+</head>
+
+<body>
+    <form id="loginform">
+        <div>
+            <h1>Login</h1>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" size="30" required><br><br>
+            <label for="loginpassword">Password</label><br>
+            <input type="password" id="loginpassword" name="loginpassword" size="30" maxlength="8" minlength="6"
+                required><br><br>
+            <input type="submit" value="Login" id="btn1">
+            <input type="reset" value="Reset" id="btn2">
+        </div>
+    </form>
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var entereduname = document.getElementById("username").value;
+            var enteredpassword = document.getElementById("loginpassword").value;
+
+            var storeduname = localStorage.getItem("uname");
+            var storedpassword = localStorage.getItem("password");
+
+            if (entereduname === storeduname && enteredpassword === storedpassword) {
+                alert("Login Successfully")
+                window.location.href = "home.html"
+            }
+            else {
+                alert("login failed!! Incorrect Username or Password!")
+            }
+        })
+    </script>
+</body>
+
+</html>

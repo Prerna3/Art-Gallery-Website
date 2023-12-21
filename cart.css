@@ -1,0 +1,38 @@
+* {
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+#shoppingcart {
+    padding: 10px 50px 40px;
+    border: 2px solid black;
+    margin: 40px 180px 40px 180px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#checkout {
+    background-color: rgb(255, 213, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: black;
+}
+
+.total h2 {
+    font-size: xx-large;
+    float: left;
+}
+
+#sub-main {
+    margin-top: 100px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-left: 40%;
+}

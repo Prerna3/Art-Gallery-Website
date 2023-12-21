@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>ArtSpire</title>
+</head>
+
+<body>
+    <form id="registerform">
+        <div>
+            <h1>Sign Up</h1>
+            <label for="uname">Username</label><br>
+            <input type="text" id="uname" name="uname" size="30" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" size="30" maxlength="8" minlength="6" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" size="30"><br><br>
+            <input type="submit" value="Signup" id="btn1">
+            <input type="reset" value="Reset" id="btn2">
+        </div>
+    </form>
+    <script>
+        document.getElementById("registerform").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var uname = document.getElementById("uname").value;
+            var password = document.getElementById("password").value;
+            localStorage.setItem("uname", uname);
+            localStorage.setItem("password", password);
+            window.location.href = "login.html"
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/palette.png" alt="Logo" style="width: 40px;">Art<span>Spire</span></a>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="cart.html">arts</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <section id="deliverydetail">
+        <div class="container">
+            <h1>Delivery Details</h1>
+            <form id="myForm" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Full Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" required placeholder="eg., John Smith">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contact">Phone Number: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="contact" minlength="10" maxlength="10" required
+                                placeholder="Enter 10 digit Phone No.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pincode">Pincode:</label>
+                        </td>
+                        <td>
+                            <input type="text" maxlength="6" minlength="6" id="pincode" required
+                                placeholder="eg.,111111">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">State:</label>
+                        </td>
+                        <td>
+                            <select id="state" required>
+                                <option value="">Select</option>
+                                <option value="mh">Maharashtra</option>
+                                <option value="gj">Gujarat</option>
+                                <option value="kr">Kerala</option>
+                                <option value="up">Uttar Pradesh</option>
+                                <option value="dl">Delhi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Address: </label>
+                        </td>
+                        <td>
+                            <textarea id="address" cols="20" rows="5"
+                                placeholder="Enter your address.."></textarea><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Method of Payment:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="online" name="payment" value="online">
+                            <label for="html">Online</label>
+                            <input type="radio" id="cod" name="payment" value="cod">
+                            <label for="css">Cash On Delivery</label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <button type="submit" onclick="validate()" id="btn"><b>Place Order</b></button>
+        </div>
+    </section>
+    <div>
+        <p id="orderplaced"></p>
+    </div>
+    <script src="JavaScript/orderplaced.js"></script>
+</body>
+
+</html>
